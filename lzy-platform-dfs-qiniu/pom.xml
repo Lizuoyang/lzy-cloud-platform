@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>lzy-platform</artifactId>
+        <groupId>com.lzy.platform</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>lzy-platform-dfs-qiniu</artifactId>
+    <name>${project.artifactId}</name>
+    <description>七牛云分布式文件存储操作</description>
+    <version>${project.parent.version}</version>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- 分布式文件存储管理 -->
+        <dependency>
+            <groupId>com.lzy.platform</groupId>
+            <artifactId>lzy-platform-dfs</artifactId>
+        </dependency>
+        <!-- 七牛云分布式文件自定义扩展 -->
+        <dependency>
+            <groupId>com.qiniu</groupId>
+            <artifactId>qiniu-java-sdk</artifactId>
+        </dependency>
+        <!-- Spring Boot自定义及扩展 -->
+        <dependency>
+            <groupId>com.lzy.platform</groupId>
+            <artifactId>lzy-platform-springboot</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+
+</project>
