@@ -21,14 +21,16 @@
         <module>lzy-platform-captcha</module>
         <module>lzy-platform-cache</module>
         <module>lzy-platform-flyway</module>
-        <module>lzy-platform-excel</module>
         <module>lzy-platform-log</module>
-        <module>lzy-platform-code-generator</module>
         <module>lzy-platform-dfs</module>
         <module>lzy-platform-dfs-aliyun</module>
         <module>lzy-platform-dfs-starter</module>
         <module>lzy-platform-dfs-qiniu</module>
         <module>lzy-platform-dfs-minio</module>
+        <module>lzy-platform-sms</module>
+        <module>lzy-platform-sms-aliyun</module>
+        <module>lzy-platform-xxl-job</module>
+        <module>lzy-platform-sms-starter</module>
     </modules>
 
     <properties>

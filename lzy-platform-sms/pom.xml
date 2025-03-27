@@ -9,17 +9,16 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>lzy-platform-code-generator</artifactId>
+    <artifactId>lzy-platform-sms</artifactId>
     <name>${project.artifactId}</name>
-    <description>用于图形化生成数据库代码：mybatis-plus-generator-ui</description>
-    <version>${project.parent.version}</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>com.github.davidfantasy</groupId>
-            <artifactId>mybatis-plus-generator-ui</artifactId>
+            <groupId>com.lzy.platform</groupId>
+            <artifactId>lzy-platform-base</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>
