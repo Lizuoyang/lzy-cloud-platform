@@ -39,4 +39,15 @@ public class BusinessException extends RuntimeException{
     public BusinessException(String message, Throwable cause) {
         super(message, cause);
     }
+
+    /**
+     * @param condition
+     * @param msg
+     * @describe 断言异常接口
+     */
+    public static void Assert(boolean condition, String msg) {
+        if (condition) {
+            throw new BusinessException(msg);
+        }
+    }
 }

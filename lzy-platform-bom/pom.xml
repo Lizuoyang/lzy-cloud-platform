@@ -94,6 +94,8 @@
         <sms.tencent.version>3.1.202</sms.tencent.version>
         <!-- 分布式任务调度平台XXL-JOB核心包 -->
         <xxl.job.version>2.3.1</xxl.job.version>
+        <!-- okhttp3 网络请求组件 -->
+        <okhttp.version>3.6.0</okhttp.version>
     </properties>
 
     <dependencyManagement>
@@ -128,6 +130,115 @@
                 <artifactId>lzy-platform-swagger2</artifactId>
                 <version>${lzy.project.version}</version>
             </dependency>
+            <!-- 扩展数据库驱动及连接池 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-db</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展mybatis-plus -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-mybatis</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展base 通用组件 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-base</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展缓存 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-cache</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展oauth2 认证和授权 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-oauth2</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展验证码 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-captcha</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展springboot -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-springboot</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展springcloud -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-springcloud</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展log 日志 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-log</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展分布式文件存储管理 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-dfs</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展阿里云-分布式文件存储管理 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-dfs-aliyun</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展七牛云-分布式文件存储管理 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-dfs-qiniu</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展MiniO-分布式文件存储管理 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-dfs-minio</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展分布式文件存储管理依赖总成 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-dfs-starter</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展短信发送 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-sms</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展阿里云短信 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-sms-aliyun</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展短信自定义starter -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-sms-starter</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+            <!-- 扩展xxl-job分布式任务调度 -->
+            <dependency>
+                <groupId>com.lzy.platform</groupId>
+                <artifactId>lzy-platform-xxl-job</artifactId>
+                <version>${lzy.project.version}</version>
+            </dependency>
+
             <!-- mysql数据库驱动 -->
             <dependency>
                 <groupId>mysql</groupId>
@@ -308,114 +419,11 @@
                 <artifactId>xxl-job-core</artifactId>
                 <version>${xxl.job.version}</version>
             </dependency>
-
-            <!-- 扩展数据库驱动及连接池 -->
+            <!-- http 工具 -->
             <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-db</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展mybatis-plus -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-mybatis</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展base 通用组件 -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-base</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展缓存 -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-cache</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展oauth2 认证和授权 -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-oauth2</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展验证码 -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-captcha</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展springboot -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-springboot</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展springcloud -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-springcloud</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展log 日志 -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-log</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展分布式文件存储管理 -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-dfs</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展阿里云-分布式文件存储管理 -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-dfs-aliyun</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展七牛云-分布式文件存储管理 -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-dfs-qiniu</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展MiniO-分布式文件存储管理 -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-dfs-minio</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展分布式文件存储管理依赖总成 -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-dfs-starter</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展短信发送 -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-sms</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展阿里云短信 -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-sms-aliyun</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展短信自定义starter -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-sms-starter</artifactId>
-                <version>${lzy.project.version}</version>
-            </dependency>
-            <!-- 扩展xxl-job分布式任务调度 -->
-            <dependency>
-                <groupId>com.lzy.platform</groupId>
-                <artifactId>lzy-platform-xxl-job</artifactId>
-                <version>${lzy.project.version}</version>
+                <groupId>com.squareup.okhttp3</groupId>
+                <artifactId>okhttp</artifactId>
+                <version>${okhttp.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

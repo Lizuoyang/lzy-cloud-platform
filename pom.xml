@@ -123,6 +123,20 @@
         </plugins>
     </build>
 
+    <!-- Nexus配置 -->
+    <!--<distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>Releases</name>
+            <url>http://192.168.9.212:8833/repository/maven-releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Snapshot</name>
+            <url>http://192.168.9.212:8833/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>-->
+
     <repositories>
         <repository>
             <id>aliyun-repos</id>
